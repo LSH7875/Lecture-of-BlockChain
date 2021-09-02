@@ -8,6 +8,16 @@ function getVersion(){
 
     //const 
 };
+
+function createGenesisBlock(){
+    //1.header만들기(5개의 인자를 만들기)
+    const version = getVersion()
+}
+
+
+
+
+
 getVersion();
 //파일을 읽어서 원하는 정보를 받아 왔다!
 

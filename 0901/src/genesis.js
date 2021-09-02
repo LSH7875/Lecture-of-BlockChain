@@ -68,6 +68,7 @@ function addBlock(){
     index++;
     const aaa=Object.values(getLastBlock().header);
     const bbb=merkle('sha256').sync(aaa).root()
+    //const bbb = SHA256(aaa).toString()
     //console.log(bbb);//bbb는 previous값
     //previoushesh 마지막 블록의 header 값을 string으로 연결해서 sha256으로 변환하면 됨.
     Blocks.push(createGenesisBlock(bbb))
